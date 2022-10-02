@@ -14,9 +14,9 @@
 						children: [Object(r.jsx)("span", {
 							children: "\xa9 "
 						}), " 2022 ", Object(r.jsx)("a", {
-							href: "https://jepfarragona.github.io/",
+							href: "https://iamzildjian.github.io/",
 							target: "blank",
-							children: "JEPFARRAGONA.GITHUB.IO"
+							children: "IAMZILDJIAN.GITHUB.IO"
 						})]
 					})
 				},
