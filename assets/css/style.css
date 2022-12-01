@@ -544,3 +544,50 @@ main {
   color: #f6f6f6;
   text-shadow: 0 0 2px #f6f6f6;
 }
+@-webkit-keyframes snowfall {
+  from {
+    transform: translate3d(var(--sw-tx, 0), var(--sw-ty, -10vh), 0);
+  }
+  34% {
+    transform: translate3d(var(--sw25-tx, 0), var(--sw25-ty, 20vh), 0);
+  }
+  67% {
+    transform: translate3d(var(--sw75-tx, 0), var(--sw75-ty, 60vh), 0);
+  }
+  100% {
+    transform: translate3d(var(--sw100-tx, 0), var(--sw100-ty, 100vh), 0);
+  }
+}
+@keyframes snowfall {
+  from {
+    transform: translate3d(var(--sw-tx, 0), var(--sw-ty, -10vh), 0);
+  }
+  34% {
+    transform: translate3d(var(--sw25-tx, 0), var(--sw25-ty, 20vh), 0);
+  }
+  67% {
+    transform: translate3d(var(--sw75-tx, 0), var(--sw75-ty, 60vh), 0);
+  }
+  100% {
+    transform: translate3d(var(--sw100-tx, 0), var(--sw100-ty, 100vh), 0);
+  }
+}
+.snow {
+  width: var(--sw-s, 10px);
+  height: var(--sw-s, 10px);
+  filter: blur(var(--sw-f, 0));
+  left: var(--sw-l, 0);
+  transform: translate3d(0, -10vh, 0);
+  -webkit-animation: snowfall var(--sw-t, 10s) var(--sw-d, 0s) infinite linear;
+          animation: snowfall var(--sw-t, 10s) var(--sw-d, 0s) infinite linear;
+  opacity: var(--sw-o, 1);
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.snow-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
