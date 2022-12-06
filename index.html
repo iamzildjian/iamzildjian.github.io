@@ -194,7 +194,134 @@ document.onmouseup = mousehandler;
 		transform: translate3d(0, 0, 0);
 	  }
 	}
-	</style>
+
+	.line {
+  text-align: center;
+}
+
+.line li {
+  position: relative;
+  margin: 0 15px;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  width: 12px;
+  height: 28px;
+  border-radius: 50%;
+  top: 8px;
+  background: #fff;
+}
+.line li:before {
+  content: "";
+  position: absolute;
+  background: #222;
+  width: 10px;
+  height: 9px;
+  border-radius: 3px;
+  top: -4px;
+  left: 1px;
+}
+.line li:after {
+  content: "";
+  top: -14px;
+  left: 9px;
+  position: absolute;
+  width: 52px;
+  height: 19px;
+  border-bottom: solid #222 2px;
+  border-radius: 30%;
+}
+
+.line .red {
+  background-color: #fb4545;
+  animation: lightningRed 1s infinite;
+}
+
+.line .green {
+  background-color: #24D024;
+  animation: lightningGreen 1.5s infinite;
+}
+
+.line .yellow {
+  background-color: #fff952;
+  animation: lightningYellow 2s infinite;
+}
+
+.line .blue {
+  background-color: #0A53DE;
+  animation: lightningBlue 2.5s infinite;
+}
+
+.line .pink {
+  background-color: #f53896;
+  animation: lightningPink 2s infinite;
+}
+
+@keyframes lightningRed {
+  0% {
+    box-shadow: 5px 10px 35px 10px #fb4545;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 10px 35px 10px #fb4545;
+  }
+}
+@keyframes lightningGreen {
+  0% {
+    box-shadow: 5px 0 35px 10px #24D024;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 35px 10px #24D024;
+  }
+}
+@keyframes lightningYellow {
+  0% {
+    box-shadow: 5px 0 35px 10px #fff952;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 35px 10px #fff952;
+  }
+}
+@keyframes lightningBlue {
+  0% {
+    box-shadow: 5px 0 35px 10px #0A53DE;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 35px 10px #0A53DE;
+  }
+}
+@keyframes lightningPink {
+  0% {
+    box-shadow: 5px 0 35px 10px #f53896;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 35px 10px #f53896;
+  }
+}
+@media (max-width: 1024px) {
+  .line {
+    padding: 0;
+  }
+
+  li {
+    margin: 0 15px 20px 15px;
+  }
+}
+</style>
 						<h2 class="content-title">Jepf Arragona</h2><h3 class="content-subtitle" original-content="Front-end Developer">&nbsp;</h3><a class="enter">enter</a>
 						<div class="arrow arrow-1"></div>
 						<div class="arrow arrow-2"></div>
@@ -204,6 +331,36 @@ document.onmouseup = mousehandler;
 							<svg class="shape" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800" xmlns:pathdata="http://www.codrops.com/">
 							<path d="M-44-50C-52.71 28.52 15.86 8.186 184 14.69 383.3 22.39 462.5 12.58 638 14 835.5 15.6 987 6.4 1194 13.86 1661 30.68 1652-36.74 1582-140.1 1512-243.5 15.88-589.5-44-50Z" pathdata:id="M -44,-50 C -137.1,117.4 67.86,445.5 236,452 435.3,459.7 500.5,242.6 676,244 873.5,245.6 957,522.4 1154,594 1593,753.7 1793,226.3 1582,-126 1371,-478.3 219.8,-524.2 -44,-50 Z"></path></svg></div></div>
 							<div class="content content-main"><i class="icon icon-eye" style="color:white;position:fixed;left:15px;top:7px"></i><span style="color:white;position:fixed;left:40px;top:11px;font-size:15px" id="visits"></span>
+		<div class="light">
+        <ul class="line">
+            <li class="red"></li>
+            <li class="yellow"></li>
+            <li class="blue"></li>
+            <li class="pink"></li>
+            <li class="red"></li>
+            <li class="green"></li>
+            <li class="blue"></li>
+            <li class="yellow"></li>
+            <li class="red"></li>
+            <li class="pink"></li>
+            <li class="blue"></li>
+            <li class="yellow"></li>
+            <li class="red"></li>
+            <li class="green"></li>
+            <li class="blue"></li>
+            <li class="yellow"></li>
+            <li class="red"></li>
+            <li class="pink"></li>
+            <li class="green"></li>
+            <li class="blue"></li>
+            <li class="pink"></li>
+            <li class="red"></li>
+            <li class="green"></li>
+            <li class="blue"></li>
+            <li class="pink"></li>
+            
+         </ul>
+    </div>
 								<i class="snow" style="--sw-f: 0px;--sw-s: 6px;--sw-l: 8vw;--sw25-tx: 4rem;--sw75-tx: -4rem;--sw-d: 0.3s;--sw-t: 59s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 5px;--sw-l: 93vw;--sw25-tx: 4rem;--sw75-tx: 3rem;--sw-d: 6.5s;--sw-t: 30s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 4px;--sw-l: 52vw;--sw25-tx: 0rem;--sw75-tx: 3rem;--sw-d: 7.2s;--sw-t: 47s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 8px;--sw-l: 41vw;--sw25-tx: 1rem;--sw75-tx: 2rem;--sw-d: 7.2s;--sw-t: 13s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 5px;--sw-l: 8vw;--sw25-tx: 1rem;--sw75-tx: -1rem;--sw-d: 0.9s;--sw-t: 40s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 6px;--sw-l: 13vw;--sw25-tx: -3rem;--sw75-tx: -1rem;--sw-d: 0.8s;--sw-t: 20s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 4px;--sw-l: 6vw;--sw25-tx: -4rem;--sw75-tx: 0rem;--sw-d: 2.7s;--sw-t: 10s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 7px;--sw-l: 35vw;--sw25-tx: -1rem;--sw75-tx: -3rem;--sw-d: 4.7s;--sw-t: 40s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 6px;--sw-l: 91vw;--sw25-tx: 1rem;--sw75-tx: 2rem;--sw-d: 3.0s;--sw-t: 15s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 4px;--sw-l: 51vw;--sw25-tx: -4rem;--sw75-tx: 0rem;--sw-d: 8.7s;--sw-t: 56s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 5px;--sw-l: 28vw;--sw25-tx: 2rem;--sw75-tx: -3rem;--sw-d: 0.1s;--sw-t: 29s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 4px;--sw-l: 30vw;--sw25-tx: 4rem;--sw75-tx: 3rem;--sw-d: 4.7s;--sw-t: 54s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 7px;--sw-l: 73vw;--sw25-tx: 1rem;--sw75-tx: -3rem;--sw-d: 5.6s;--sw-t: 18s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 7px;--sw-l: 3vw;--sw25-tx: -3rem;--sw75-tx: -3rem;--sw-d: 0.9s;--sw-t: 38s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 7px;--sw-l: 9vw;--sw25-tx: 1rem;--sw75-tx: -3rem;--sw-d: 4.5s;--sw-t: 23s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 4px;--sw-l: 82vw;--sw25-tx: -3rem;--sw75-tx: 0rem;--sw-d: 6.6s;--sw-t: 26s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 6px;--sw-l: 36vw;--sw25-tx: -3rem;--sw75-tx: 1rem;--sw-d: 3.7s;--sw-t: 34s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 6px;--sw-l: 57vw;--sw25-tx: 1rem;--sw75-tx: 4rem;--sw-d: 2.9s;--sw-t: 18s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 5px;--sw-l: 74vw;--sw25-tx: 4rem;--sw75-tx: 3rem;--sw-d: 9.8s;--sw-t: 55s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 6px;--sw-l: 13vw;--sw25-tx: 2rem;--sw75-tx: 4rem;--sw-d: 3.0s;--sw-t: 21s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 7px;--sw-l: 50vw;--sw25-tx: -2rem;--sw75-tx: 4rem;--sw-d: 2.7s;--sw-t: 17s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 8px;--sw-l: 14vw;--sw25-tx: 1rem;--sw75-tx: 0rem;--sw-d: 6.3s;--sw-t: 51s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 8px;--sw-l: 79vw;--sw25-tx: 4rem;--sw75-tx: 4rem;--sw-d: 7.0s;--sw-t: 13s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 6px;--sw-l: 53vw;--sw25-tx: -4rem;--sw75-tx: 1rem;--sw-d: 9.6s;--sw-t: 24s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 8px;--sw-l: 97vw;--sw25-tx: 1rem;--sw75-tx: 1rem;--sw-d: 4.4s;--sw-t: 21s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 7px;--sw-l: 56vw;--sw25-tx: -3rem;--sw75-tx: 3rem;--sw-d: 3.0s;--sw-t: 30s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 6px;--sw-l: 28vw;--sw25-tx: 0rem;--sw75-tx: 3rem;--sw-d: 8.7s;--sw-t: 21s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 4px;--sw-l: 20vw;--sw25-tx: 0rem;--sw75-tx: 3rem;--sw-d: 2.1s;--sw-t: 42s;"></i><i class="snow" style="--sw-f: 1px;--sw-s: 5px;--sw-l: 96vw;--sw25-tx: 3rem;--sw75-tx: -1rem;--sw-d: 0.7s;--sw-t: 46s;"></i><i class="snow" style="--sw-f: 0px;--sw-s: 3px;--sw-l: 68vw;--sw25-tx: -3rem;--sw75-tx: 1rem;--sw-d: 3.7s;--sw-t: 51s;"></i>
 								<div id="card">
 									<div class="card-inner fade">
