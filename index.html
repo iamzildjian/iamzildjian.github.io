@@ -393,6 +393,15 @@ document.onmouseup = mousehandler;
 	  }
 	}
 	</style>
+	<style>
+		.bgfireworks {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+	</style>
 						<h2 class="content-title">Jepf Arragona</h2><h3 class="content-subtitle" original-content="Web Portfolio">&nbsp;</h3><a class="enter">enter</a>
 						<div class="arrow arrow-1"></div>
 						<div class="arrow arrow-2"></div>
@@ -430,6 +439,8 @@ document.onmouseup = mousehandler;
 									  </div>
 									</div>
 								  </div>
+								  <div class="bgfireworks"></div>
+  									<div class="bgfireworks"></div>
 								<div id="card">
 									<div class="card-inner fade">
 										<header>
@@ -531,6 +542,30 @@ return false;
 }  
 }
 </script>
+<script src='https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js'></script>
+      <script id="rendered-js" >
+var fires = document.getElementsByClassName("bgfireworks");
+const options = [0.99, 1.05];
+
+for (var i = 0; i < fires.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+  const fireworks = new Fireworks(fires[i], {
+    hue: { min: 0, max: 360 },
+    delay: { min: 30, max: 100 },
+    brightness: { min: 80, max: 100 },
+    rocketsPoint: 50,
+    opacity: 1,
+    speed: 1,
+    acceleration: options[i],
+    friction: 0.97,
+    gravity: 2,
+    particles: 200,
+    trace: 10,
+    explosion: 4 });
+
+  fireworks.start();
+}window.CP.exitedLoop(0);
+//# sourceURL=pen.js
+    </script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/background.js"></script>
 <script src="registerSW76d7.js?v=5134a598be2f7"></script>
