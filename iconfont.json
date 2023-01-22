@@ -1,0 +1,51 @@
+{
+  "id": "3550019",
+  "name": "jepf",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "109733",
+      "name": "download",
+      "font_class": "download",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "4868918",
+      "name": "profile",
+      "font_class": "profile",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "6151209",
+      "name": "eye",
+      "font_class": "eye",
+      "unicode": "e7ed",
+      "unicode_decimal": 59373
+    },
+    {
+      "icon_id": "5226638",
+      "name": "spotify",
+      "font_class": "spotify",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "380337",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "11992527",
+      "name": "discord",
+      "font_class": "discord",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    }
+  ]
+}
