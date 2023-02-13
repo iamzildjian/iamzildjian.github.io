@@ -195,93 +195,393 @@ document.onmouseup = mousehandler;
 	  }
 	}
 
-#center {
-  position: absolute;
-  top: 50%;
-  left: 47%;
-  transform: translate(-50%,-50%);
+	.container {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: relative;
 }
 
-.heart {
+/******************************      penguin     ******************************/
+.penguin {
+  --penguin-skin: #685F64;
+  --penguin-belly: #DADCCE;
+  --penguin-eye: #25171A;
+  --penguin-sparkle: #F7FFF7;
+  --penguin-beak: #FF6B35;
+  --penguin-blush: #FFA69E;
+  position: relative;
+  margin: auto;
+  margin-top: 20%;
+  width: 75%;
+  height: 75%;
+}
+
+.penguin * {
   position: absolute;
-  top: 50%;
+}
+
+/*** penguin bottom ***/
+.penguin-bottom {
+  background: #685F64;
+  background: var(--penguin-skin, #685F64);
+  top: 40%;
+  left: 22.5%;
+  width: 55%;
+  height: 45%;
+  border-radius: 70% 70% 90% 90%;
+}
+
+.hand {
+  background: #685F64;
+  background: var(--penguin-skin, #685F64);
+  top: 0%;
+  width: 30%;
+  height: 60%;
+}
+
+.left-hand {
+  left: 75%;
+  border-radius: 20% 20% 20% 100%;
+  transform: rotate(-55deg);
+}
+
+.right-hand {
+  left: 25%;
+  border-radius: 20% 20% 100% 20%;
+  transform: rotate(130deg);
+  animation-name: wawe;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 0% 0%;
+}
+
+@keyframes wawe {
+  10% {
+    transform: rotate(110deg);
+  }
+  30% {
+    transform: rotate(130deg);
+  }
+  50% {
+    transform: rotate(110deg);
+  }
+  70% {
+    transform: rotate(130deg);
+  }
+  }
+
+.feet {
+  background: #FF6B35;
+  background: var(--penguin-beak, #FF6B35);
+  top: 83%;
+  width: 15%;
+  height: 30%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.left-feet {
+  left: 60%;
+  transform: rotate(-80deg);
+}
+
+.right-feet {
+  left: 25%;
+  transform: rotate(80deg);
+}
+
+.bow-tie {
+  --bow-tie-middle: #17BEBB;
+  --bow-tie-edge: #2CC3C1;
+  top: 10%;
+  left: 30%;
+  width: 40%;
+  height: 20%;
+  z-index: 1;
+}
+
+.bow-tie .middle {
+  background: #17BEBB;
+  background: var(--bow-tie-middle, #17BEBB);
+  top: 30%;
+  left: 37.5%;
+  width: 25%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.bow-tie .left-edge {
+  background: #2CC3C1;
+  background: var(--bow-tie-edge, #2CC3C1);
+  top: 20%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  width: 50%;
+  height: 80%;
+  border-radius: 90% 10% 10% 90% / 50% 50% 50% 50%;
 }
 
-.heart:before,
-.heart:after {
+.bow-tie .right-edge {
+  background: #2CC3C1;
+  background: var(--bow-tie-edge, #2CC3C1);
+  top: 20%;
+  left: 0%;
+  width: 50%;
+  height: 80%;
+  border-radius: 10% 90% 90% 10% / 50% 50% 50% 50%;
+}
+
+/*** penguin top ***/
+.penguin-top {
+  background: #685F64;
+  background: var(--penguin-skin, #685F64);
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  height: 47%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.cheek {
+  background: #DADCCE;
+  background: var(--penguin-belly, #DADCCE);
+  top: 15%;
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.left-cheek {
+  left: 5%;
+}
+
+.right-cheek {
+  left: 35%;
+}
+
+.eye {
+  background: #25171A;
+  background: var(--penguin-eye, #25171A);
+  top: 45%;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;
+}
+
+.left-eye {
+  left: 25%;
+}
+
+.right-eye {
+  left: 60%;
+}
+
+.sparkle {
+  background: #F7FFF7;
+  background: var(--penguin-sparkle, #F7FFF7);
+  top: 25%;
+  left: 15%;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+}
+
+.blush {
+  background: #FFA69E;
+  background: var(--penguin-blush, #FFA69E);
+  top: 65%;
+  width: 15%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.left-blush {
+  left: 15%;
+}
+
+.right-blush {
+  left: 70%;
+}
+
+.beak {
+  background: #FF6B35;
+  background: var(--penguin-beak, #FF6B35);
+  border-radius: 50%;
+}
+
+.beak-top {
+  left: 40%;
+  top: 60%;
+  width: 20%;
+  height: 10%;
+}
+
+.beak-bottom {
+  left: 42%;
+  top: 65%;
+  width: 16%;
+  height: 10%;
+}
+
+.belly {
+  background: #DADCCE;
+  background: var(--penguin-belly, #DADCCE);
+  left: 2.5%;
+  top: 60%;
+  width: 95%;
+  height: 100%;
+  border-radius: 120% 120% 100% 100%;
+}
+
+.crest {
+  top: -15%;
+  left: 40%;
+  width: 20%;
+  height: 20%;
+}
+
+.crest .long {
+  background: #685F64;
+  background: var(--penguin-skin, #685F64);
+  top: 0%;
+  left: 50%;
+  width: 30%;
+  height: 100%;
+  border-radius: 40%;
+  transform: rotate(5deg);
+}
+
+.crest .short {
+  background: #685F64;
+  background: var(--penguin-skin, #685F64);
+  top: 20%;
+  left: 46%;
+  width: 25%;
+  height: 100%;
+  border-radius: 50% 90% 10% 10%;
+  transform: rotate(-35deg);
+}
+
+/******************************      ballon       *****************************/
+.ballon .thread {
   position: absolute;
+  top: 2%;
+  left: 75%;
+  width: 15%;
+  height: 40%;
+  border: transparent;
+  border-left: 2px solid #9E999C;
+  border-radius: 95% 0% 0% 10%;
+}
+
+.ballon .heart {
+  --ballon: #FFA69E;
+  background: #FFA69E;
+  background: var(--ballon, #FFA69E);
+  position: absolute;
+  top: -11%;
+  left: 85%;
+  width: 20px;
+  height: 20px;
+  border-radius: 0% 0% 0% 10%;
+  transform: rotate(-70deg);
+}
+
+.ballon .heart::after {
   content: "";
-  left: 18px;
-  top: 0px;
-  width: 18px;
-  height: 30px;
-  background: #E72650;
-  border-radius: 30px 30px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
+  position: absolute;
+  background: #FFA69E;
+  background: var(--ballon, #FFA69E);
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
-.heart:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin :100% 100%;
+.ballon .heart::before {
+  content: "";
+  position: absolute;
+  background: #FFA69E;
+  background: var(--ballon, #FFA69E);
+  top: -50%;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
-.one {
-  transform: scale(0.8);
-  opacity: 0.6;
-  animation: up 15s linear infinite, side 6s ease-in-out infinite alternate;
+/******************************      hearts       *****************************/
+.hearts .big {
+  --big-heart: #FFDEDB;
+  background: #FFDEDB;
+  background: var(--big-heart, #FFDEDB);
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-55deg);
 }
 
-.two {
-  transform: scale(0.6);
-  opacity: 0.9;
-  animation: up 25s linear infinite, side 5s ease-in-out infinite alternate;
+.hearts .big::after {
+content: "";
+background: #FFDEDB;
+background: var(--big-heart, #FFDEDB);
+position: absolute;
+left: 50%;
+width: 20px;
+height: 20px;
+border-radius: 50%;
 }
 
-.three {
-  transform: scale(0.8);
-  opacity: 0.8;
-  animation: up 20s linear infinite, side 4s ease-in-out infinite alternate;
+.hearts .big::before {
+content: "";
+background: #FFDEDB;
+background: var(--big-heart, #FFDEDB);
+position: absolute;
+left: 0%;
+top: -50%;
+width: 20px;
+height: 20px;
+border-radius: 50%;
 }
 
-.four {
-  transform: scale(0.7);
-  opacity: 0.9;
-  animation: up 18s linear infinite, side 2s ease-in-out infinite alternate;
+.hearts .small {
+  --small-heart: #FFE1DE;
+  background: #FFE1DE;
+  background: var(--small-heart, #FFE1DE);
+  position: absolute;
+  top: 16%;
+  left: 27%;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-55deg);
 }
 
-.five {
-  transform: scale(0.6);
-  opacity: 0.3; 
-  animation: up 7s linear infinite, side 1s ease-in-out infinite alternate;
+.hearts .small::after {
+  content: "";
+  background: #FFE1DE;
+  background: var(--small-heart, #FFE1DE);
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
-.six {
-  opacity: 0.8; 
-  animation: up 10s linear infinite, side 7s ease-in-out infinite alternate;
+.hearts .small::before {
+  content: "";
+  background: #FFE1DE;
+  background: var(--small-heart, #FFE1DE);
+  position: absolute;
+  top: -50%;
+  left: 0%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
-@keyframes up {     
-  0% { 
-    top: 300px;
-  }
-  100% { 
-    top: -500px;
-  }
-}
-
-
-@keyframes side {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: 50px;
-  }
-}
 	</style>
 
 						<h2 class="content-title">Jepf Arragona</h2><h3 class="content-subtitle" original-content="Web Portfolio">&nbsp;</h3><a class="enter">enter</a>
@@ -310,15 +610,49 @@ document.onmouseup = mousehandler;
 													</ul>
 												</div>
 											</div>
-											<div id="center">
-<div class='heart one'></div>
-<div class='heart two'></div>
-<div class='heart three'></div>
-<div class='heart four'></div>
-<div class='heart five'></div>
-<div class='heart six'></div>
+											<div class="container">
+  <div class="ballon">
+    <div class="thread"></div>
+    <div class="heart"></div>
+  </div>
+  <div class="hearts">
+    <div class="big"></div>
+    <div class="small"></div>
+  </div>
+  <div class="penguin">
+    <div class="penguin-bottom">
+      <div class="hand left-hand"></div>
+      <div class="hand right-hand"></div>
+      <div class="feet left-feet"></div>
+      <div class="feet right-feet"></div>
+      <div class="bow-tie">
+        <div class="left-edge"></div>
+        <div class="right-edge"></div>
+        <div class="middle"></div>
+      </div>
+    </div>
+    <div class="penguin-top">
+      <div class="crest">
+        <div class="long"></div>
+        <div class="short"></div>
+      </div>
+      <div class="belly"></div>
+      <div class="cheek left-cheek"></div>
+      <div class="cheek right-cheek"></div>
+      <div class="eye left-eye">
+        <div class="sparkle"></div>
+      </div>
+      <div class="eye right-eye">
+        <div class="sparkle"></div>
+      </div>
+      <div class="blush left-blush"></div>
+      <div class="blush right-blush"></div>
+      <div class="beak beak-top"></div>
+      <div class="beak beak-bottom"></div>
+    </div>
+  </div>
 </div>
-											<i id="cat"><i></i></i>
+
 										</div>
 <audio controls="" autoplay="autoplay" loop="loop" style="display:none;">
 <source src="binary.mp3" type="audio/mpeg">
