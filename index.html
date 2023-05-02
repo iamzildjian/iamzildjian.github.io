@@ -14,6 +14,11 @@
           }
         site_name();     
   </script>
+<script>
+  function liveViews(response) {
+      document.getElementById('visits').innerText = response.value;
+  }
+</script>  
 <script async src="https://api.countapi.xyz/hit/iamzildjian.github.io/visits?callback=liveViews"></script>
 <script type="text/javascript">  
 var isNS = (navigator.appName == "Netscape") ? 1 : 0;
@@ -227,11 +232,6 @@ document.onmouseup = mousehandler;
 <audio controls="" autoplay="autoplay" loop="loop" style="display:none;">
 <source src="binary.mp3" type="audio/mpeg">
 </audio>
-<script type="text/javascript">
-function liveViews(response) {
-    document.querySelector("#visits").textContent = response.value;
-}   
-</script>
 <script src="assets/npm/animejs%403.2.1/lib/anime.min.js"></script>
 <script>window.$ = selector => document.querySelector(selector)
 const getOriginalContent = selector => $(selector).getAttribute("original-content")
