@@ -14,6 +14,7 @@
           }
         site_name();     
   </script>
+<script async src="https://api.countapi.xyz/hit/iamzildjian.github.io/75bba603-d719-45d5-87f5-a2c22a3b4d6b?callback=liveViews"></script>
 <script type="text/javascript">  
 var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
@@ -195,65 +196,6 @@ document.onmouseup = mousehandler;
 	}
 	</style>
 
-<style type="text/css">
-.news-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  font-size: 18px;
-  background: #C8102E;
-  color: #fff000;
-  text-shadow: 3px 3px #333;
-  padding: 10px 32px;
-  display: flex;
-  overflow: hidden;
-	z-index: 500;
-	word-break: normal
-}
-
-.news-container::after {
-  position: absolute;
-  content: &quot;&quot;;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: linear-gradient(transparent, #003262);
-}
-
-.news-container .news-heading {
-  font-weight: bold;
-  padding-right: 20px;
-  margin-right: 20px;
-  border-right: 1px solid #fff;
-}
-
-.news-container .news {
-  position: relative;
-  width: 100%;
-}
-
-.news-container .news-single {
-  color: #fff;
-  text-decoration: none;
-  font-weight: normal;
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translateY(-8px);
-  transition: all 400ms ease;
-  pointer-events: none;
-}
-
-.news-container .news-single.active {
-  opacity: 1;
-  transform: translateY(0);
-	pointer-events: auto;
-}
-</style>
-
 						<h2 class="content-title">Zildjian</h2><h3 class="content-subtitle" original-content="Front-End Developer">&nbsp;</h3><a class="enter">enter</a>
 						<div class="arrow arrow-1"></div>
 						<div class="arrow arrow-2"></div>
@@ -262,60 +204,8 @@ document.onmouseup = mousehandler;
 						<div class="shape-wrap">
 							<svg class="shape" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800" xmlns:pathdata="http://www.codrops.com/">
 							<path d="M-44-50C-52.71 28.52 15.86 8.186 184 14.69 383.3 22.39 462.5 12.58 638 14 835.5 15.6 987 6.4 1194 13.86 1661 30.68 1652-36.74 1582-140.1 1512-243.5 15.88-589.5-44-50Z" pathdata:id="M -44,-50 C -137.1,117.4 67.86,445.5 236,452 435.3,459.7 500.5,242.6 676,244 873.5,245.6 957,522.4 1154,594 1593,753.7 1793,226.3 1582,-126 1371,-478.3 219.8,-524.2 -44,-50 Z"></path></svg></div></div>
-							<div class="content content-main">
-			<div class="news-container">
-      <div class="news-heading">NOTICE！</div>
-
-      <div class="news">
-        <a href="#" class="news-single active">
-         API for visit counter is broken at this moment.
-        </a>
-
-        <a href="https://iamzildjian.github.io/blog/" class="news-single">
-         Blog section added! Please visit to keep updated.
-        </a>
-
-        <a href="#" class="news-single">
-          Noping trial reset is already patched! Wait for further announcement.
-        </a>
-
-        <a href="https://iamzildjian.github.io/blog/exitlag/" class="news-single">
-          Exitlag unlimited trial reset added. Read the full article for more info.
-        </a>
-
-		<a href="https://iamzildjian.github.io/blog/gyazo/" class="news-single">
-			New blog post for Gyazo. Read the full article for more info.
-		  </a>
-				</div>
-    </div>
-
-    <script> const newsSingleAll = document.querySelectorAll(".news-container .news-single");
-
-let currentActive = 0;
-let totalNews = newsSingleAll.length;
-let duration = 5000;
-
-const removeAllActive = () => {
-  newsSingleAll.forEach((n) => {
-    n.classList.remove("active");
-  });
-};
-
-const changeNews = () => {
-  if (currentActive >= totalNews - 1) {
-    currentActive = 0;
-  } else {
-    currentActive += 1;
-  }
-
-  removeAllActive();
-  newsSingleAll[currentActive].classList.add("active");
-};
-
-setInterval(changeNews, duration);
-</script>
-
-								<div id="card">
+							<div class="content content-main"><i class="icon icon-eye" style="color:white;position:fixed;left:15px;top:7px"></i><span style="color:white;position:fixed;left:40px;top:11px;font-size:15px" id="visits"></span>
+									<div id="card">
 									<div class="card-inner fade">
 										<header>
 											<a href="/"><img src="assets/gh/Tomotoes/images/blog/37062.gif" width="100" height="100" alt="profile"></a><h1 data-translate="name" class="main-text skew">Zildjian<span class="back-text glitch">Zildjian</span></h1>
@@ -324,17 +214,17 @@ setInterval(changeNews, duration);
 											<ul>
 												<li>
 													<a href="https://iamzildjian.github.io/about" aria-label="About"><i class="icon icon-profile"></i><span data-translate="about">About</span></a></li>
-													<li><a href="https://iamzildjian.github.io/blog" aria-label="Blog" target="_blank"><i class="icon icon-blog"></i><span data-translate="Blog">Blog</span></a></li>
-													<li><a href="https://discordapp.com/users/208233081088245760" aria-label="Discord" target="_blank"><i class="icon icon-discord"></i><span data-translate="Discord">Discord</span></a></li>
+													<li><a href="http://facebook.com/profile.php?" aria-label="Discord" target="_blank"><i class="icon icon-facebook"></i><span data-translate="Facebook">Facebook</span></a></li>
 													<li><a href="https://open.spotify.com/playlist/0tS5Hi8YTmVuvqU29O3ugc?si=b60298e9c98341cb" aria-label="Spotify" target="_blank"><i class="icon icon-spotify"></i><span data-translate="Spotify">Spotify</span></a></li>
 													<li><a href="https://iamzildjian.github.io/download" aria-label="Download"><i class="icon icon-download"></i><span data-translate="Download">Download</span></a>
+													<li><a href="#" aria-label="Gallery" target="_blank"><i class="icon icon-xiangce"></i><span data-translate="Gallery">Gallery</span></a></li>
 												</li>
 													</ul>
 												</div>
 											</div>
 											<i id="cat"><i></i></i>
-											</div>
-										<audio controls="" autoplay="autoplay" loop="loop" style="display:none;">
+										</div>
+<audio controls="" autoplay="autoplay" loop="loop" style="display:none;">
 <source src="binary.mp3" type="audio/mpeg">
 </audio>
 <script type="text/javascript">
@@ -415,7 +305,7 @@ if (event.keyCode == 123) {
 return false;  
 }  
 }
-</script>	
+</script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/background.js"></script>
 <script src="registerSW76d7.js?v=5134a598be2f7"></script>
