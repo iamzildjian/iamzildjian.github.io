@@ -255,9 +255,13 @@ document.onmouseup = mousehandler;
 </style>
 
 <style type="text/css">
+h1,
+h2 {
+  margin: 0;
+}
 
 .hero {
-  font-size: clamp(30px, 10vw, 100px);
+  font-size: clamp(40px, 10vw, 100px);
   line-height: 1;
   display: inline-block;
   color: #fff;
@@ -813,8 +817,8 @@ setInterval(changeNews, duration);
 									<div class="card-inner fade">
 										<header>
 											<a href="/"><img src="assets/gh/Tomotoes/images/blog/37062.gif" width="100" height="100" alt="profile"></a>
-											<br>
-											<h1 class="hero glitch layers" data-text="Zildjian"><span>Zildjian</span></h1>
+											<div class="hero-container">
+											<h2 class="hero glitch layers" data-text="Zildjian"><span>Zildjian</span></h2></div>
 											<h2 id="signature" data-translate="signature">Code, Eat &amp; Repeat</h2>
 											</header>
 											<ul>
